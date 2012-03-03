@@ -1,0 +1,29 @@
+<Entity>
+	<Name>Proveedor</Name>
+	<Description>Proveedor</Description>
+	<SetName>Proveedores</SetName>
+	<Descriptor>Proveedor</Descriptor>
+	<SetDescriptor>Proveedores</SetDescriptor>
+	<SqlTable>proveedores</SqlTable>
+	
+	<Properties>
+
+		<Property>
+			<Name>Id</Name>
+			<Type>Id</Type>
+		</Property>
+
+		<Property>
+			<Name>Nombre</Name>
+			<Type>Text</Type>
+			<SqlType>varchar(200)</SqlType>
+		</Property>
+
+		<Property>
+			<Name>IdEmpresa</Name>
+			<Type>IdRef</Type>
+			<SqlType>int</SqlType>
+			<Reference>Empresa</Reference>
+		</Property>
+	</Properties>
+</Entity>

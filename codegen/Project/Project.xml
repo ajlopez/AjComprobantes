@@ -1,0 +1,14 @@
+<Project>
+	<Name>AjComprobantes</Name>
+	<Description>Compras y Ventas</Description>
+	<Prefix>AjCompro</Prefix>
+	<Domain>com.ajlopez</Domain>
+	<CompanyName>ajlopez</CompanyName>
+	<Model>
+		<Entities>
+			<Entity Source="Entities/Empresa.xml"/>
+			<Entity Source="Entities/Proveedor.xml"/>
+			<Entity Source="Entities/Cliente.xml"/>
+		</Entities>
+	</Model>
+</Project>
