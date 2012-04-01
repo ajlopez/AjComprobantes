@@ -32,6 +32,19 @@ function EmpresaGetList($where='',$order='') {
 	return DbExecuteQuery($sql);
 }
 
+function EmpresaGetListView($where='',$order='') {
+	global $Cfg;
+
+	$sql = "select Id, Id, Nombre from $Cfg[SqlPrefix]empresas";
+
+	if ($where)
+		$sql .= " where $where";
+	if (!$order)
+		$order = 'Id';
+	$sql .= " order by $order";
+
+	return DbExecuteQuery($sql);
+}
 
 function EmpresaGetView($where='',$order='') {
 	global $Cfg;

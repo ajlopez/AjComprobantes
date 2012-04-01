@@ -32,6 +32,19 @@ function ClienteGetList($where='',$order='') {
 	return DbExecuteQuery($sql);
 }
 
+function ClienteGetListView($where='',$order='') {
+	global $Cfg;
+
+	$sql = "select Id, Id, Nombre, IdEmpresa from $Cfg[SqlPrefix]clientes";
+
+	if ($where)
+		$sql .= " where $where";
+	if (!$order)
+		$order = 'Id';
+	$sql .= " order by $order";
+
+	return DbExecuteQuery($sql);
+}
 
 function ClienteGetView($where='',$order='') {
 	global $Cfg;

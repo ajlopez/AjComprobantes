@@ -10,5 +10,20 @@
 			<Entity Source="Entities/Proveedor.xml"/>
 			<Entity Source="Entities/Cliente.xml"/>
 		</Entities>
+		<Lists>
+			<List Entity="Empresa" />
+			<List Entity="Proveedor" />
+			<List Entity="Cliente" />
+		</Lists>
+		<Forms>
+			<Form Entity="Empresa" />
+			<Form Entity="Proveedor" />
+			<Form Entity="Cliente" />
+		</Forms>
+		<Views>
+			<View Entity="Empresa" />
+			<View Entity="Proveedor" />
+			<View Entity="Cliente" />
+		</Views>
 	</Model>
 </Project>

@@ -32,6 +32,19 @@ function ProveedorGetList($where='',$order='') {
 	return DbExecuteQuery($sql);
 }
 
+function ProveedorGetListView($where='',$order='') {
+	global $Cfg;
+
+	$sql = "select Id, Id, Nombre, IdEmpresa from $Cfg[SqlPrefix]proveedores";
+
+	if ($where)
+		$sql .= " where $where";
+	if (!$order)
+		$order = 'Id';
+	$sql .= " order by $order";
+
+	return DbExecuteQuery($sql);
+}
 
 function ProveedorGetView($where='',$order='') {
 	global $Cfg;

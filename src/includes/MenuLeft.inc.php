@@ -53,6 +53,9 @@ function MenuLeftClose()
 	MenuLeftClose();
 
 	MenuLeftOpen('Entities');
+	MenuLeftOption('Empresas','EmpresaList.php');
+	MenuLeftOption('Proveedores','ProveedorList.php');
+	MenuLeftOption('Clientes','ClienteList.php');
 	MenuLeftClose();
 /*
 	TODO: User Login and Register
